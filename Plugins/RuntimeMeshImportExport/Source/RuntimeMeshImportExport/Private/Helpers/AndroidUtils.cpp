@@ -5,6 +5,7 @@
 #if PLATFORM_ANDROID
 #include "AndroidPermissionFunctionLibrary.h"
 #include "AndroidPermissionCallbackProxy.h"
+#include "..\..\Public\Helpers\AndroidUtils.h"
 #endif
 
 
@@ -34,6 +35,11 @@ FString UAndroidUtils::GetPersistentDataPath()
 
 	return FString("");
 #endif
+}
+
+FString UAndroidUtils::GetExternalDataPath()
+{
+	return FString();
 }
 
 #if PLATFORM_ANDROID

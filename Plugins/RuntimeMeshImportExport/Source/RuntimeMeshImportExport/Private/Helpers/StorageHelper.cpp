@@ -24,7 +24,7 @@ FString UStorageHelper::GetRootFolder()
 #elif PLATFORM_IOS
     return[PhotoViewController getPersistentDataPath];
 #else
-    return FPaths::Combine(FPlatformProcess::UserSettingsDir(), FString("Avatar SDK UE4 Plugin"));
+    return FPaths::Combine(FPlatformProcess::UserSettingsDir(), FString("UE5"));
 #endif
     
 }

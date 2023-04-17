@@ -26,6 +26,10 @@ public:
 	UAndroidUtils();
 	UFUNCTION()
 	FString GetPersistentDataPath();
+
+	UFUNCTION()
+	FString GetExternalDataPath();
+
 private:
 	FDelegateHandle DelegateHandle;
 #if PLATFORM_ANDROID

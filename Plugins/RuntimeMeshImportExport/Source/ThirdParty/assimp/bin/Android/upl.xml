@@ -27,6 +27,7 @@
 	<gameActivityImportAdditions>
 		<insert>	
 		import android.app.Application;
+		import android.os.Environment;
 		</insert>
 	</gameActivityImportAdditions>
 	
@@ -46,6 +47,11 @@
 			PackageManager localPackageManager = context.getPackageManager();
 			packageInfo = localPackageManager.getPackageInfo(packageName, 0);
 			return packageInfo.applicationInfo.dataDir;
+		}
+		
+		public String AndroidThunkJava_GetSharedPath() throws NameNotFoundException
+		{
+			return Environment.getExternalStorageDirectory().toString();
 		}
 		</insert>
 	</gameActivityClassAdditions>
